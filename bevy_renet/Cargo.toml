@@ -20,30 +20,17 @@ name = "simple"
 required-features = ["netcode"]
 
 [dependencies]
-bevy_app = {
-    git = "https://github.com/bevyengine/bevy",
-    rev = "489818930b7ec268455fe371b3c5b0fb1c0c46c3",
-}
-bevy_ecs = {
-    git = "https://github.com/bevyengine/bevy",
-    rev = "489818930b7ec268455fe371b3c5b0fb1c0c46c3",
-}
-bevy_time = {
-    git = "https://github.com/bevyengine/bevy",
-    rev = "489818930b7ec268455fe371b3c5b0fb1c0c46c3",
-}
-bevy_derive = {
-    git = "https://github.com/bevyengine/bevy",
-    rev = "489818930b7ec268455fe371b3c5b0fb1c0c46c3",
-}
+bevy_app = "0.19.0-rc.1"
+bevy_ecs = "0.19.0-rc.1"
+bevy_time = "0.19.0-rc.1"
+bevy_derive = "0.19.0-rc.1"
 renet = { path="../renet", version = "2.0.0" }
 renet_netcode = { path="../renet_netcode", version = "2.0.0", optional = true }
 renet_steam = { path="../renet_steam", version = "3.0.0", optional = true }
 
 [dev-dependencies]
 bevy = {
-    git = "https://github.com/bevyengine/bevy",
-    rev = "489818930b7ec268455fe371b3c5b0fb1c0c46c3",
+    version = "0.19.0-rc.1",
     default-features = false, features = ["bevy_core_pipeline", "bevy_render", "bevy_asset", "bevy_pbr", "x11", "tonemapping_luts", "ktx2", "zstd_rust", "bevy_window"]
 }
 bincode = "1.3"
